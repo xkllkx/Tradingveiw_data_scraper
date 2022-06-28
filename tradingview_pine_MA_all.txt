@@ -1,0 +1,11 @@
+//@version=5
+indicator("MA_all", overlay=true)
+plot(ta.sma(close, 7), color=color.yellow)
+plot(ta.sma(close, 10), color=color.orange)
+plot(ta.sma(close, 20), color=color.navy)
+plot(ta.sma(close, 30), color=color.red)
+plot(ta.sma(close, 40), color=color.green)
+plot(ta.sma(close, 50), color=color.purple)
+plot(ta.sma(close, 99), color=color.blue)
+plot(time_close(timeframe.period, "0000-0000","Asia/Taipei")/1000)
+plot(close)
