@@ -104,8 +104,8 @@ def login(driver):
         "name": "//*[@id='overlap-manager-root']/div/div[2]/div/div/div/div/div/div/div[1]/div[4]/div/span"
     }
     login_url = "https://www.tradingview.com/#signin"
-    account = "xkllkx102958"
-    password = "xkllkx102958"
+    account = "帳號"
+    password = "密碼"
     driver.get(login_url)
     time.sleep(1)
 
@@ -131,7 +131,7 @@ def select_currency(driver, symbol, target):
         "delete_msg": "//*[@id='overlap-manager-root']/div/div/div[1]/div/div[1]/span"
     }
     print('---交易畫面載入---')
-    DataUrl = "https://www.tradingview.com/chart/w9WmcMnp/?symbol=" + symbol + "%3A" + target
+    DataUrl = "https://www.tradingview.com/chart/w9WmcMnp/?symbol=" + symbol + "%3A" + target # target url
     driver.get(DataUrl)
     time.sleep(3)
 
