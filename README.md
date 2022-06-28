@@ -1,0 +1,1 @@
+# picture_detect_word
